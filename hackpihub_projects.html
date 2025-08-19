@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HackPi Hub — Projects</title>
+  <meta name="description" content="Explore projects from HackPi Hub — Raspberry Pi hacking builds, services, and custom kits." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#070b10; --panel:#0c121a; --card:#0b1118; --text:#e6f1ff; --muted:#9fb0c2; --border:#1d2b3d; --accent:#2af598; --accent2:#12d6e5; --radius:18px; --shadow:0 18px 60px rgba(0,0,0,.45); --maxw:1200px; }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background:radial-gradient(900px 700px at 85% -10%, rgba(18,214,229,.12), transparent 40%),
+                 radial-gradient(800px 600px at -10% 10%, rgba(42,245,152,.10), transparent 45%),
+                 radial-gradient(600px 500px at 50% 115%, rgba(102,102,255,.10), transparent 50%), var(--bg);
+      line-height:1.6}
+    a{color:inherit;text-decoration:none;transition:all .25s ease} img{max-width:100%;display:block;border-radius:14px}
+    .container{width:min(100% - 2rem, var(--maxw)); margin-inline:auto}
+    header{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--border);background:rgba(7,11,16,.75);backdrop-filter:saturate(140%) blur(8px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+    .brand{display:flex;align-items:center;gap:.8rem;transition:transform .3s ease}
+    .brand:hover{transform:scale(1.05)}
+    .logo{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#081018;
+      background:conic-gradient(from 180deg at 50% 50%, var(--accent) 0 25%, var(--accent2) 25% 50%, #6cf 50% 75%, #86f 75% 100%);
+      box-shadow:0 10px 26px rgba(42,245,152,.35), inset 0 0 22px rgba(255,255,255,.2);font-family:"JetBrains Mono",monospace;font-weight:800}
+    .brand h1{font-size:1.05rem;margin:0;letter-spacing:.2px} .brand small{display:block;color:var(--muted);margin-top:2px}
+    .navlinks{display:flex;gap:.4rem;align-items:center}
+    .navlinks a{padding:.6rem .9rem;border-radius:12px;color:var(--muted);font-weight:600}
+    .navlinks a:hover{color:var(--text);background:rgba(42,245,152,.08)}
+    .btn,.btn-ghost{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.2rem;border-radius:12px;font-weight:700;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease}
+    .btn{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#081018;border:none;box-shadow:0 12px 28px rgba(42,245,152,.35)}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(42,245,152,.45)} .btn-ghost{border:1px solid var(--border);background:#0b121a;color:var(--text)}
+    section{padding:3rem 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:2rem;box-shadow:var(--shadow);transition:transform .3s ease, box-shadow .3s ease}
+    .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.6)}
+    .card h2{margin-top:0} .card p{color:var(--muted)}
+    .grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    footer{border-top:1px solid var(--border);padding:2rem 0;color:var(--muted);text-align:center}
+    form{display:grid;gap:1rem;max-width:500px;margin:auto}
+    input,textarea{padding:.8rem 1rem;border-radius:12px;border:1px solid var(--border);background:#0c121a;color:var(--text);font-size:1rem}
+    button{padding:.9rem 1.2rem;border-radius:12px;border:none;background:linear-gradient(135deg,var(--accent),var(--accent2));font-weight:700;cursor:pointer;color:#081018}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="logo">HP</div>
+        <div>
+          <h1>HackPi Hub</h1>
+          <small>Raspberry Pi • Ethical Hacking</small>
+        </div>
+      </a>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="https://ko-fi.com/bennietzfanya" target="_blank">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-ghost" href="https://github.com/bbgun123-ben" target="_blank">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1>Projects</h1>
+    <div class="grid">
+      <div id="cyberdeck" class="card">
+        <h2>Cyberdeck</h2>
+        <p>A modular Raspberry Pi hacking station. <em>Coming soon!</em></p>
+      </div>
+      <div id="p4wn" class="card">
+        <h2>P4WN ALOA</h2>
+        <p>An injection toolkit built on Raspberry Pi for authorized penetration testing. Price: $42.</p>
+        <a class="btn" href="mailto:benniebluest@icloud.com?subject=P4WN%20ALOA%20Order">Buy Now</a>
+      </div>
+      <div id="pwnagotchi" class="card">
+        <h2>Pwnagotchi Build</h2>
+        <p>A Raspberry Pi Zero W powered AI that learns Wi-Fi pwning. <em>Coming soon!</em></p>
+      </div>
+      <div id="server" class="card">
+        <h2>2TB Jellyfin Server</h2>
+        <p>Media streaming & backups service with Raspberry Pi and 2TB storage.</p>
+        <a class="btn" href="mailto:benniebluest@icloud.com?subject=2TB%20Jellyfin%20Server%20Request">Request Service</a>
+      </div>
+      <div id="custom" class="card">
+        <h2>Custom Raspberry Pi Project</h2>
+        <p>Have an idea? Contact me to build your own custom Raspberry Pi kit or service.</p>
+        <a class="btn" href="mailto:benniebluest@icloud.com?subject=Custom%20Raspberry%20Pi%20Build">Contact for Custom Build</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container card">
+    <h2>About HackPi Hub</h2>
+    <p>HackPi Hub is run by Bennie, blending Raspberry Pi with cybersecurity and creativity. From tools like P4WN ALOA to services like a Jellyfin media server, and custom builds, this hub is where projects come alive.</p>
+  </section>
+
+  <section id="contact" class="container card">
+    <h2>Contact Me</h2>
+    <form action="mailto:benniebluest@icloud.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> HackPi Hub. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
